@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  left: 1
+  top: 1
+  width: 1
+  height: 1
+
+two:
+  left: 1
+  top: 1
+  width: 1
+  height: 1

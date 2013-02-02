@@ -1,0 +1,3 @@
+class Designer < ActiveRecord::Base
+  attr_accessible :name
+end

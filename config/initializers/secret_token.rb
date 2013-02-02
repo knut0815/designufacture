@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Designufacture::Application.config.secret_token = 'bbafd2933a684b856970ec4285656204ba16654e583f25bc871c7d614110f66a3d9e71c3b359dfce441f0d82c5b20f13c21912374a1b60eb22477df184fdee90'
+Designufacture::Application.config.secret_token = '69d6d625211c74dba0b40fa913911520850323345dcee200f1d0cda264615c73a857b3d6e3176e56dd76e828107028805dd2fd10a52ddb29383b097ec80598c2'

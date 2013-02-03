@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130202235124) do
+ActiveRecord::Schema.define(:version => 20130203050339) do
 
   create_table "comments", :force => true do |t|
     t.integer  "tag_id"
@@ -35,6 +35,12 @@ ActiveRecord::Schema.define(:version => 20130202235124) do
     t.datetime "updated_at",      :null => false
   end
 
+  create_table "iterations", :force => true do |t|
+    t.integer  "feedback_loop_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
   create_table "manufacturers", :force => true do |t|
     t.string   "name"
     t.string   "location"
@@ -46,8 +52,13 @@ ActiveRecord::Schema.define(:version => 20130202235124) do
   create_table "projects", :force => true do |t|
     t.string   "name"
     t.text     "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.integer  "designer_id"
   end
 
   create_table "roles", :force => true do |t|
@@ -105,8 +116,9 @@ ActiveRecord::Schema.define(:version => 20130202235124) do
 
   create_table "videos", :force => true do |t|
     t.string   "url"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.integer  "iteration_id"
   end
 
 end
